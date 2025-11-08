@@ -4,10 +4,23 @@ body {
     align-items: center; 
     height: 100vh; 
     background: #f5f3f3; 
-    font-family: sans-serif; }
+    font-family: sans-serif; 
+}
 
     .calculator { 
         border: 2px solid #242323; 
         padding: 10px; 
         border-radius: 10px; 
-        background: #fff; }
+        background: #fff; 
+    }
+
+     .display { 
+        background: #222; 
+        color: white; 
+        font-size: 2em; 
+        padding: 10px; 
+        text-align: right; 
+        border-radius: 5px; 
+        margin-bottom: 10px; 
+        min-width: 200px; 
+    }
