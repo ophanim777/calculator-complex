@@ -24,3 +24,9 @@ body {
         margin-bottom: 10px; 
         min-width: 200px; 
     }
+
+     .buttons { 
+        display: grid; 
+        grid-template-columns: repeat(4, 50px); 
+        gap: 5px; 
+    }
