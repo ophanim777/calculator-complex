@@ -58,3 +58,18 @@ function clearDisplay() {
   secondNumber = '';
   currentOperator = null;
 }
+
+function evaluate() {
+  if (currentOperator === null || shouldResetDisplay) return;
+  if (currentOperator === '/' && display.textContent === '0') {
+    display.textContent = "Error: Can't divide by 0!";
+    currentOperator = null;
+    return;
+  }
+
+  secondNumber = display.textContent;
+  const result = operate(currentOperator, firstNumber, secondNumber);
+  display.textContent = Math.round(result * 1000) / 1000;
+  firstNumber = display.textContent;
+  currentOperator = null;
+}
