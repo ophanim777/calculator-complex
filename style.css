@@ -30,3 +30,23 @@ body {
         grid-template-columns: repeat(4, 50px); 
         gap: 5px; 
     }
+
+     button { 
+        font-size: 1.2em; 
+        padding: 10px; 
+        cursor: pointer; 
+        border-radius: 5px; 
+    }
+
+    button.operator { 
+        background: #ffd166; 
+    }
+    
+    button.equal { 
+        background: #06d6a0; 
+    }
+
+    button.clear { 
+        background: #ef476f; 
+        color: white; 
+    }
