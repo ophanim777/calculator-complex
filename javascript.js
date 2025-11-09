@@ -51,3 +51,10 @@ function updateDisplay(value) {
   }
   display.textContent += value;
 }
+
+function clearDisplay() {
+  display.textContent = '0';
+  firstNumber = '';
+  secondNumber = '';
+  currentOperator = null;
+}
