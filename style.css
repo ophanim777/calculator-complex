@@ -39,14 +39,14 @@ body {
     }
 
     button.operator { 
-        background: #ffd166; 
+        background: #ecc771; 
     }
-    
+
     button.equal { 
-        background: #06d6a0; 
+        background: #64d3b5; 
     }
 
     button.clear { 
-        background: #ef476f; 
+        background: #423aab; 
         color: white; 
     }
