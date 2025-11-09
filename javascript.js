@@ -73,3 +73,13 @@ function evaluate() {
   firstNumber = display.textContent;
   currentOperator = null;
 }
+
+function appendDecimal() {
+  if (shouldResetDisplay) {
+    display.textContent = '0';
+    shouldResetDisplay = false;
+  }
+  if (!display.textContent.includes('.')) {
+    display.textContent += '.';
+  }
+}
