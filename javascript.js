@@ -83,3 +83,7 @@ function appendDecimal() {
     display.textContent += '.';
   }
 }
+
+function backspace() {
+  display.textContent = display.textContent.slice(0, -1) || '0';
+}
