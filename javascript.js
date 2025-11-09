@@ -87,3 +87,19 @@ function appendDecimal() {
 function backspace() {
   display.textContent = display.textContent.slice(0, -1) || '0';
 }
+
+document.querySelectorAll('.buttons button').forEach((button) => {
+  if (button.classList.contains('operator')) {
+    button.addEventListener('click', () => setOperator(button.textContent));
+  } else if (button.classList.contains('equal')) {
+    button.addEventListener('click', evaluate);
+  } else if (button.classList.contains('clear')) {
+    button.addEventListener('click', clearDisplay);
+  } else if (button.classList.contains('decimal')) {
+    button.addEventListener('click', appendDecimal);
+  } else if (button.classList.contains('backspace')) {
+    button.addEventListener('click', backspace);
+  } else {
+    button.addEventListener('click', () => updateDisplay(button.textContent));
+  }
+});
