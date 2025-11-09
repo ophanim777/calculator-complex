@@ -40,3 +40,14 @@ let firstNumber = '';
 let secondNumber = '';
 let currentOperator = null;
 let shouldResetDisplay = false;
+
+function updateDisplay(value) {
+  if (shouldResetDisplay) {
+    display.textContent = '';
+    shouldResetDisplay = false;
+  }
+  if (display.textContent === '0' || display.textContent === "Error: Can't divide by 0!") {
+    display.textContent = '';
+  }
+  display.textContent += value;
+}
