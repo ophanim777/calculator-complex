@@ -34,3 +34,9 @@ function operate(operator, a, b) {
       return null;
   }
 }
+
+const display = document.getElementById('display');
+let firstNumber = '';
+let secondNumber = '';
+let currentOperator = null;
+let shouldResetDisplay = false;
