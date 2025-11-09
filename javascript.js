@@ -103,3 +103,12 @@ document.querySelectorAll('.buttons button').forEach((button) => {
     button.addEventListener('click', () => updateDisplay(button.textContent));
   }
 });
+
+window.addEventListener('keydown', (e) => {
+  if (e.key >= 0 && e.key <= 9) updateDisplay(e.key);
+  if (['+', '-', '*', '/'].includes(e.key)) setOperator(e.key);
+  if (e.key === 'Enter' || e.key === '=') evaluate();
+  if (e.key === 'Backspace') backspace();
+  if (e.key === 'Escape') clearDisplay();
+  if (e.key === '.') appendDecimal();
+});
